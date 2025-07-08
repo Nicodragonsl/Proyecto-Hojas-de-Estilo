@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom hover shadow */
+@layer components {
+  .shadow-hover:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicaciones - TechCloud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/aplicaciones.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-700 text-white shadow">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold">TechCloud</h1>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+        <li><a href="historia.html" class="hover:underline">Historia</a></li>
+        <li><a href="tipos.html" class="hover:underline">Tipos</a></li>
+        <li><a href="aplicaciones.html" class="underline">Aplicaciones</a></li>
+        <li><a href="futuro.html" class="hover:underline">Futuro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 animate-fade-in">Principales Aplicaciones</h2>
+    <div class="swiper mySwiper2 w-full max-w-4xl mx-auto rounded-lg shadow-lg">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/images/cloud-app.jpg" alt="App Nube" class="w-full"></div>
+        <div class="swiper-slide"><img src="assets/images/ai-app.jpg" alt="App IA" class="w-full"></div>
+        <div class="swiper-slide"><img src="assets/images/automation-app.jpg" alt="App Automatizacion" class="w-full"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <footer class="bg-blue-800 text-white py-4 text-center">
+    <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      autoplay: { delay: 3500 },
+      pagination: { el: ".swiper-pagination", clickable: true },
+    });
+  </script>
+</body>
+</html>

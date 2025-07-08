@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bounce slower */
+@layer utilities {
+  .animate-bounce-slow { animation: bounce 3s infinite; }
+}
