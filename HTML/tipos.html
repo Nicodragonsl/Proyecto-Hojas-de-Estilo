@@ -1,43 +1,168 @@
+<!-- archivo: tipos.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tipos - TechCloud</title>
+  <title>Tipos de IA - TechCloud</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/tipos.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-700 text-white shadow">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl font-bold">TechCloud</h1>
-      <ul class="flex gap-6">
-        <li><a href="index.html" class="hover:underline">Inicio</a></li>
-        <li><a href="historia.html" class="hover:underline">Historia</a></li>
-        <li><a href="tipos.html" class="underline">Tipos</a></li>
-        <li><a href="aplicaciones.html" class="hover:underline">Aplicaciones</a></li>
-        <li><a href="futuro.html" class="hover:underline">Futuro</a></li>
+<body class="h-screen flex bg-gray-100 font-sans text-gray-800">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg">
+    <div class="h-16 flex items-center justify-center bg-blue-600 text-white border-b border-gray-200">
+      <span class="text-2xl font-bold">TechCloud</span>
+    </div>
+    <nav class="mt-6">
+      <ul>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="index.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9m-2 8v-6a2 2 0 00-2-2h-4a2 2 0 00-2 2v6m-4 0v-6a2 2 0 012-2h4a2 2 0 012 2v6"/>
+            </svg>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="historia.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none" />
+            </svg>
+            <span>Historia</span>
+          </a>
+        </li>
+        <li class="px-6 py-3 bg-blue-600 text-white border-l-4 border-blue-800 transition rounded">
+          <a href="#" class="flex items-center gap-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <span>Tipos</span>
+          </a>
+        </li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="aplicaciones.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51h.09a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+            </svg>
+            <span>Aplicaciones</span>
+          </a>
+        </li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="futuro.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 0110 10h-2a8 8 0 10-8 8v2a10 10 0 010-20z"/>
+            </svg>
+            <span>Futuro</span>
+          </a>
+        </li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
-  <main class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <article class="p-6 bg-white rounded-lg shadow transform hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Tipos de Nube</h3>
-      <p>Pública, Privada e Híbrida: sus ventajas y casos de uso.</p>
-    </article>
-    <article class="p-6 bg-white rounded-lg shadow transform hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Tipos de IA</h3>
-      <p>IA débil vs IA fuerte y ramas como aprendizaje supervisado y no supervisado.</p>
-    </article>
-    <article class="p-6 bg-white rounded-lg shadow transform hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Tipos de Automatización</h3>
-      <p>RPA, Automatización de procesos y Automatización CNC en manufactura.</p>
-    </article>
-  </main>
+  <!-- Contenido principal -->
+  <div class="flex-1 flex flex-col overflow-auto">
+    <!-- Topbar -->
+    <header class="h-16 bg-blue-600 text-white border-b border-gray-200 flex items-center px-8 shadow-sm">
+      <h1 class="text-2xl font-semibold flex-1">Tipos de Inteligencia Artificial</h1>
+    </header>
 
-  <footer class="bg-blue-800 text-white py-4 text-center">
-    <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
-  </footer>
+    <!-- Sección introductoria -->
+    <section class="p-8 bg-white m-4 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Tipos de inteligencia artificial</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Si bien el término inteligencia artificial abarca una gran variedad de tecnologías que comparten un objetivo en común (emular la inteligencia humana), no todas operan de la misma manera. Para comprender los alcances y la complejidad de cada uno de estos avances tecnológicos es necesario recurrir a sistemas que permitan agruparlos de acuerdo a una clasificación.
+      </p>
+    </section>
+
+    <!-- Clasificaciones en cards -->
+    <main class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Hintze -->
+      <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
+        <img src="https://source.unsplash.com/collection/928423/400x200" alt="Arend Hintze" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Clasificación de Arend Hintze</h3>
+        <p class="text-gray-600 mb-4">
+          Basada en la capacidad predictiva y niveles de complejidad: máquinas reactivas, memoria limitada, teoría de la mente y autoconciencia.
+        </p>
+        <a href="#hintze" class="text-blue-600 hover:underline">Ver detalles →</a>
+      </article>
+      <!-- Nivel de inteligencia -->
+      <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
+        <img src="https://source.unsplash.com/collection/1127163/400x200" alt="Nivel de inteligencia" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Clasificación por nivel de inteligencia</h3>
+        <p class="text-gray-600 mb-4">
+          Muestra la evolución esperada: Inteligencia Artificial Estrecha, General y Súper Inteligencia Artificial.
+        </p>
+        <a href="#nivel-inteligencia" class="text-blue-600 hover:underline">Ver detalles →</a>
+      </article>
+      <!-- Russell & Norvig -->
+      <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
+        <img src="https://source.unsplash.com/collection/1428881/400x200" alt="Russell Norvig" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Clasificación de Russell & Norvig</h3>
+        <p class="text-gray-600 mb-4">
+          Enfoques centrados en humanos y en racionalidad: sistemas que piensan como humanos, actúan como humanos, piensan racionalmente y actúan racionalmente.
+        </p>
+        <a href="#russell-norvig" class="text-blue-600 hover:underline">Ver detalles →</a>
+      </article>
+      <!-- Operación -->
+      <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
+        <img src="https://source.unsplash.com/collection/8881465/400x200" alt="Modo de operación" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Clasificación por modo de operación</h3>
+        <p class="text-gray-600 mb-4">
+          Según cómo operan: reactivos, memoria limitada, teoría de la mente y autoconciencia.
+        </p>
+        <a href="#modo-operacion" class="text-blue-600 hover:underline">Ver detalles →</a>
+      </article>
+    </main>
+
+    <!-- Secciones de detalle -->
+    <section id="hintze" class="p-8 m-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Tipos de IA de acuerdo con Arend Hintze</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>Máquinas reactivas:</strong> No guardan experiencias previas (p.ej. Deep Blue).</li>
+        <li><strong>Memoria limitada:</strong> Almacenan aprendizajes de corto plazo para decisiones.</li>
+        <li><strong>Teoría de la mente:</strong> Procesan emociones y reflexiones humanas (en desarrollo).</li>
+        <li><strong>Autoconciencia:</strong> Nivel más alto, máquinas con emociones propias (futuro).</li>
+      </ul>
+    </section>
+
+    <section id="nivel-inteligencia" class="p-8 m-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Tipos de IA según nivel de inteligencia</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>Inteligencia Artificial Estrecha (ANI):</strong> IA débil enfocada en tareas específicas.</li>
+        <li><strong>Inteligencia Artificial General (AGI):</strong> IA con capacidades equiparables a humanos (investigación).</li>
+        <li><strong>Súper Inteligencia Artificial (ASI):</strong> IA que supera capacidades humanas.</li>
+      </ul>
+    </section>
+
+    <section id="russell-norvig" class="p-8 m-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Tipos de IA según Russell & Norvig</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>Sistemas que piensan como humanos:</strong> Redes neuronales artificiales.</li>
+        <li><strong>Sistemas que actúan como humanos:</strong> Robots humanoides.</li>
+        <li><strong>Sistemas que piensan racionalmente:</strong> Sistemas expertos.</li>
+        <li><strong>Sistemas que actúan racionalmente:</strong> Agentes inteligentes.</li>
+      </ul>
+    </section>
+
+    <section id="modo-operacion" class="p-8 m-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Tipos de IA según modo de operación</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>Aprendizaje automático:</strong> Algoritmos que aprenden de datos (p.ej. recomendaciones).</li>
+        <li><strong>Aprendizaje profundo:</strong> Redes neuronales con múltiples capas.</li>
+        <li><strong>Sistemas expertos:</strong> Solucionan problemas específicos (medicina, finanzas).</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="h-12 bg-white border-t border-gray-200 flex items-center justify-center mt-auto">
+      <p class="text-sm text-gray-500">&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
+    </footer>
+  </div>
 </body>
 </html>

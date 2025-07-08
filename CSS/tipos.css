@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom hover shadow */
+/* Sombras mejoradas */
 @layer components {
-  .shadow-hover:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  }
+  .shadow-md { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .shadow-lg { box-shadow: 0 10px 15px rgba(0,0,0,0.15); }
 }
