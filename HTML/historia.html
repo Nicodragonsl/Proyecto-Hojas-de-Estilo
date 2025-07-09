@@ -7,6 +7,16 @@
   <title>Historia - TechCloud</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/historia.css">
+  <style>
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
+  }
+</style>
+
 </head>
 <body class="h-screen flex bg-gray-100 font-sans text-gray-800">
 
@@ -67,6 +77,13 @@
 
   <!-- Contenido principal -->
   <div class="flex-1 ml-64 flex flex-col min-h-screen">
+    
+      <header class="h-12 bg-blue-600 text-white flex items-center overflow-hidden">
+  <div class="animate-marquee whitespace-nowrap text-lg font-semibold px-4">
+    Conoce mi historia humano inferior!!! ⚡💾👾
+  </div>
+</header>
+
 
     <main class="p-8 flex-1 overflow-auto space-y-12">
       <!-- Sección introductoria -->
@@ -111,6 +128,39 @@
           <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">¡Quiero saber más! 🚀</button>
         </form>
       </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6">
+  <h3 class="text-2xl font-semibold mb-4 text-center">⏳ Línea del tiempo tecnológica</h3>
+  <div class="flex justify-between items-center space-x-4 mt-6">
+    <div class="flex flex-col items-center text-sm text-gray-700">
+      <span class="text-2xl">💡</span>
+      <span>1950s</span>
+    </div>
+    <div class="h-1 bg-blue-400 flex-1"></div>
+    <div class="flex flex-col items-center text-sm text-gray-700">
+      <span class="text-2xl">💻</span>
+      <span>1980s</span>
+    </div>
+    <div class="h-1 bg-blue-400 flex-1"></div>
+    <div class="flex flex-col items-center text-sm text-gray-700">
+      <span class="text-2xl">🌐</span>
+      <span>2000s</span>
+    </div>
+    <div class="h-1 bg-blue-400 flex-1"></div>
+    <div class="flex flex-col items-center text-sm text-gray-700">
+      <span class="text-2xl">🤖</span>
+      <span>2020s</span>
+    </div>
+  </div>
+</section>
+
+        <section class="bg-blue-50 rounded-lg shadow-md p-6 mt-8 text-center">
+  <blockquote class="italic text-lg text-gray-800 max-w-3xl mx-auto">
+    “La inteligencia artificial no sustituirá a los humanos. Pero los humanos que la dominen, sí sustituirán a los que no lo hagan.”  
+  </blockquote>
+  <p class="mt-2 text-sm text-gray-500">— Antonio Nicolas Guevara</p>
+</section>
+
     </main>
 
     <!-- Footer -->
