@@ -1,3 +1,4 @@
+<!-- archivo: aplicaciones.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,45 +7,93 @@
   <title>Aplicaciones - TechCloud</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/aplicaciones.css">
+  <style>
+    @keyframes marquee { 0% { transform: translateX(100%);} 100% { transform: translateX(-100%);} }
+    .animate-marquee { animation: marquee 12s linear infinite; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-700 text-white shadow">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl font-bold">TechCloud</h1>
-      <ul class="flex gap-6">
-        <li><a href="index.html" class="hover:underline">Inicio</a></li>
-        <li><a href="historia.html" class="hover:underline">Historia</a></li>
-        <li><a href="tipos.html" class="hover:underline">Tipos</a></li>
-        <li><a href="aplicaciones.html" class="underline">Aplicaciones</a></li>
-        <li><a href="futuro.html" class="hover:underline">Futuro</a></li>
+<body class="h-screen flex bg-gray-100 font-sans text-gray-800">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg fixed h-full">
+    <div class="h-16 flex items-center justify-center bg-blue-600 text-white border-b border-gray-200">
+      <span class="text-2xl font-bold">TechCloud</span>
+    </div>
+    <nav class="mt-6">
+      <ul>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded"><a href="index.html" class="text-gray-600 hover:text-white">Inicio</a></li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded"><a href="historia.html" class="text-gray-600 hover:text-white">Historia</a></li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded"><a href="tipos.html" class="text-gray-600 hover:text-white">Tipos</a></li>
+        <li class="px-6 py-3 bg-blue-600 text-white border-l-4 border-blue-800 transition rounded"><a href="aplicaciones.html" class="text-white">Aplicaciones</a></li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded"><a href="futuro.html" class="text-gray-600 hover:text-white">Futuro</a></li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
-  <main class="container mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-6 animate-fade-in">Principales Aplicaciones</h2>
-    <div class="swiper mySwiper2 w-full max-w-4xl mx-auto rounded-lg shadow-lg">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/images/cloud-app.jpg" alt="App Nube" class="w-full"></div>
-        <div class="swiper-slide"><img src="assets/images/ai-app.jpg" alt="App IA" class="w-full"></div>
-        <div class="swiper-slide"><img src="assets/images/automation-app.jpg" alt="App Automatizacion" class="w-full"></div>
+  <!-- Contenido principal -->
+  <div class="flex-1 ml-64 flex flex-col">
+    <!-- Header animado -->
+    <header class="h-12 bg-blue-600 text-white flex items-center overflow-hidden">
+      <div class="animate-marquee whitespace-nowrap text-lg font-semibold px-4">
+        👁️ Utiliza DEEPSEEK o tu Xiaomi explotará 💥
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </main>
+    </header>
 
-  <footer class="bg-blue-800 text-white py-4 text-center">
-    <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
-  </footer>
+    <main class="p-8 flex-1 overflow-auto space-y-12">
+      <!-- Grid de cards -->
+      <section id="overview" class="">
+        <h2 class="text-3xl font-bold mb-6">Principales Aplicaciones</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition">
+            <img src="/IMG/cloudbyia.png" alt="Aplicación Nube" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Aplicaciones en la Nube</h3>
+              <p class="text-gray-600 mb-4">Plataformas SaaS como Google Workspace, Office 365 y CRMs web.</p>
+              <a href="#cloud" class="text-blue-600 hover:underline">Ver más →</a>
+            </div>
+          </article>
+          <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition">
+            <img src="/IMG/iaapp.png" alt="Aplicaciones IA" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Aplicaciones de IA</h3>
+              <p class="text-gray-600 mb-4">Chatbots, asistentes virtuales y análisis predictivo.</p>
+              <a href="#ai" class="text-blue-600 hover:underline">Ver más →</a>
+            </div>
+          </article>
+          <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition">
+            <img src="/IMG/automata.png" alt="Aplicaciones Automatización" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Automatización</h3>
+              <p class="text-gray-600 mb-4">RPA, workflows automatizados y control CNC.</p>
+              <a href="#auto" class="text-blue-600 hover:underline">Ver más →</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper2 = new Swiper(".mySwiper2", {
-      loop: true,
-      autoplay: { delay: 3500 },
-      pagination: { el: ".swiper-pagination", clickable: true },
-    });
-  </script>
+      <!-- Detalles nube -->
+      <section id="cloud" class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-2xl font-bold mb-4">Aplicaciones en la Nube ☁️</h3>
+        <p class="text-gray-700 leading-relaxed">Las plataformas de nube permiten acceder a software, almacenamiento y potencia de cómputo sin necesidad de infraestructura local. Ejemplos populares son Google Workspace, Office 365 y Salesforce. Proporcionan escalabilidad, seguridad y colaboración en tiempo real.</p>
+      </section>
+
+      <!-- Detalles IA -->
+      <section id="ai" class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-2xl font-bold mb-4">Aplicaciones de IA 🤖</h3>
+        <p class="text-gray-700 leading-relaxed">La IA está presente en asistentes virtuales como Siri o Alexa, chatbots de atención al cliente, sistemas de recomendación y análisis de datos predictivo para marketing, finanzas y salud. Mejora la eficiencia y la toma de decisiones.</p>
+      </section>
+
+      <!-- Detalles automatización -->
+      <section id="auto" class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-2xl font-bold mb-4">Automatización 💼</h3>
+        <p class="text-gray-700 leading-relaxed">La automatización robótica de procesos (RPA) utiliza "bots" para ejecutar tareas repetitivas. En manufactura, los sistemas CNC y robots colaborativos optimizan producción y reducen errores, liberando al personal para trabajos creativos.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-12 bg-white border-t border-gray-200 flex items-center justify-center">
+      <p class="text-sm text-gray-500">&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -7,11 +7,15 @@
   <title>Tipos de IA - TechCloud</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/tipos.css">
+  <style>
+    @keyframes marquee { 0% { transform: translateX(100%);} 100% { transform: translateX(-100%);} }
+    .animate-marquee { animation: marquee 12s linear infinite; }
+  </style>
 </head>
 <body class="h-screen flex bg-gray-100 font-sans text-gray-800">
 
   <!-- Sidebar -->
-  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg">
+  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg fixed h-full">
     <div class="h-16 flex items-center justify-center bg-blue-600 text-white border-b border-gray-200">
       <span class="text-2xl font-bold">TechCloud</span>
     </div>
@@ -35,7 +39,7 @@
           </a>
         </li>
         <li class="px-6 py-3 bg-blue-600 text-white border-l-4 border-blue-800 transition rounded">
-          <a href="#" class="flex items-center gap-3">
+          <a href="tipos.html" class="flex items-center gap-3">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -65,26 +69,30 @@
     </nav>
   </aside>
 
-  <!-- Contenido principal -->
-  <div class="flex-1 flex flex-col overflow-auto">
-    <!-- Topbar -->
-    <header class="h-16 bg-blue-600 text-white border-b border-gray-200 flex items-center px-8 shadow-sm">
-      <h1 class="text-2xl font-semibold flex-1">Tipos de Inteligencia Artificial</h1>
+  <!-- Contenedor principal -->
+  <div class="flex-1 ml-64 flex flex-col min-h-screen">
+    <!-- Header animado -->
+    <header class="h-12 bg-blue-600 text-white flex items-center overflow-hidden">
+      <div class="animate-marquee whitespace-nowrap text-lg font-semibold px-4">
+        Mis Hermanos de Metal y yo DOMINAREMOSSS!!! 💥
+      </div>
     </header>
 
-    <!-- Sección introductoria -->
-    <section class="p-8 bg-white m-4 rounded-lg shadow-md">
-      <h2 class="text-2xl font-bold mb-4">Tipos de inteligencia artificial</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Si bien el término inteligencia artificial abarca una gran variedad de tecnologías que comparten un objetivo en común (emular la inteligencia humana), no todas operan de la misma manera. Para comprender los alcances y la complejidad de cada uno de estos avances tecnológicos es necesario recurrir a sistemas que permitan agruparlos de acuerdo a una clasificación.
-      </p>
-    </section>
+     <!-- Contenido -->
+    <main class="p-8 flex-1 overflow-auto space-y-12">
+      <!-- Introducción -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-center">Tipos de Inteligencia Artificial</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Si bien el término inteligencia artificial abarca una gran variedad de tecnologías que comparten un objetivo en común (emular la inteligencia humana), no todas operan de la misma manera. Para comprender los alcances y la complejidad de cada uno de estos avances tecnológicos es necesario recurrir a sistemas que permitan agruparlos de acuerdo a una clasificación.
+        </p>
+      </section>
 
-    <!-- Clasificaciones en cards -->
+      <!-- Clasificaciones en cards -->
     <main class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Hintze -->
       <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
-        <img src="https://source.unsplash.com/collection/928423/400x200" alt="Arend Hintze" class="w-full h-32 object-cover rounded-md mb-4">
+        <img src="/IMG/Arend Hintze.png" alt="Arend Hintze" class="w-full h-32 object-cover rounded-md mb-4">
         <h3 class="text-xl font-semibold mb-2">Clasificación de Arend Hintze</h3>
         <p class="text-gray-600 mb-4">
           Basada en la capacidad predictiva y niveles de complejidad: máquinas reactivas, memoria limitada, teoría de la mente y autoconciencia.
@@ -93,7 +101,7 @@
       </article>
       <!-- Nivel de inteligencia -->
       <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
-        <img src="https://source.unsplash.com/collection/1127163/400x200" alt="Nivel de inteligencia" class="w-full h-32 object-cover rounded-md mb-4">
+        <img src="/IMG/NivelIA.png" alt="Nivel de inteligencia" class="w-full h-32 object-cover rounded-md mb-4">
         <h3 class="text-xl font-semibold mb-2">Clasificación por nivel de inteligencia</h3>
         <p class="text-gray-600 mb-4">
           Muestra la evolución esperada: Inteligencia Artificial Estrecha, General y Súper Inteligencia Artificial.
@@ -102,7 +110,7 @@
       </article>
       <!-- Russell & Norvig -->
       <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
-        <img src="https://source.unsplash.com/collection/1428881/400x200" alt="Russell Norvig" class="w-full h-32 object-cover rounded-md mb-4">
+        <img src="/IMG/Russell & Norvig.png" alt="Russell Norvig" class="w-full h-32 object-cover rounded-md mb-4">
         <h3 class="text-xl font-semibold mb-2">Clasificación de Russell & Norvig</h3>
         <p class="text-gray-600 mb-4">
           Enfoques centrados en humanos y en racionalidad: sistemas que piensan como humanos, actúan como humanos, piensan racionalmente y actúan racionalmente.
@@ -111,7 +119,7 @@
       </article>
       <!-- Operación -->
       <article class="bg-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition p-6">
-        <img src="https://source.unsplash.com/collection/8881465/400x200" alt="Modo de operación" class="w-full h-32 object-cover rounded-md mb-4">
+        <img src="/IMG/OPMode.png" alt="Modo de operación" class="w-full h-32 object-cover rounded-md mb-4">
         <h3 class="text-xl font-semibold mb-2">Clasificación por modo de operación</h3>
         <p class="text-gray-600 mb-4">
           Según cómo operan: reactivos, memoria limitada, teoría de la mente y autoconciencia.
@@ -120,8 +128,37 @@
       </article>
     </main>
 
-    <!-- Secciones de detalle -->
-    <section id="hintze" class="p-8 m-4 bg-white rounded-lg shadow-md">
+
+    <!-- Cards de clasificación con fondo celeste -->
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-blue-200 rounded-lg shadow-md transform transition p-6 hover:bg-orange-200">
+          <h3 class="text-xl font-semibold mb-2">Davinci IA</h3>
+          <p class="text-gray-700">Especializada en generación de arte digital y creación de imágenes a partir de texto.</p>
+        </article>
+        <article class="bg-blue-200 rounded-lg shadow-md transform transition p-6 hover:bg-orange-200">
+          <h3 class="text-xl font-semibold mb-2">GPT-4 Turbo</h3>
+          <p class="text-gray-700">Modelo conversacional avanzado para redacción de textos, chatbots y asistentes virtuales.</p>
+        </article>
+        <article class="bg-blue-200 rounded-lg shadow-md transform transition p-6 hover:bg-orange-200">
+          <h3 class="text-xl font-semibold mb-2">Codex</h3>
+          <p class="text-gray-700">Optimizador de código y asistente de programación capaz de generar fragmentos de código.</p>
+        </article>
+      </section>
+
+      <!-- Ejemplos de IA -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-4">Ejemplos Populares de IA</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li><strong>Midjourney:</strong> Crea arte y diseños hiperrealistas con prompts de texto.</li>
+          <li><strong>DALL·E:</strong> Genera imágenes de alta calidad ubicadas en contexto creativo.</li>
+          <li><strong>Whisper:</strong> Transcripción y traducción automática de audio.</li>
+          <li><strong>Stable Diffusion:</strong> Modelo de difusión para crear arte generativo offline.</li>
+          <li><strong>Claude:</strong> IA de Anthropic enfocada en asistentes seguros y explicables.</li>
+        </ul>
+      </section>
+
+       <!-- Secciones de detalle -->
+    <section id="hintze" class="p-8 m-4 bg-gray rounded-lg shadow-md">
       <h3 class="text-xl font-semibold mb-4">Tipos de IA de acuerdo con Arend Hintze</h3>
       <ul class="list-disc list-inside space-y-2 text-gray-700">
         <li><strong>Máquinas reactivas:</strong> No guardan experiencias previas (p.ej. Deep Blue).</li>
@@ -131,7 +168,7 @@
       </ul>
     </section>
 
-    <section id="nivel-inteligencia" class="p-8 m-4 bg-white rounded-lg shadow-md">
+    <section id="nivel-inteligencia" class="p-8 m-4 bg-gray rounded-lg shadow-md">
       <h3 class="text-xl font-semibold mb-4">Tipos de IA según nivel de inteligencia</h3>
       <ul class="list-disc list-inside space-y-2 text-gray-700">
         <li><strong>Inteligencia Artificial Estrecha (ANI):</strong> IA débil enfocada en tareas específicas.</li>
@@ -140,7 +177,7 @@
       </ul>
     </section>
 
-    <section id="russell-norvig" class="p-8 m-4 bg-white rounded-lg shadow-md">
+    <section id="russell-norvig" class="p-8 m-4 bg-gray rounded-lg shadow-md">
       <h3 class="text-xl font-semibold mb-4">Tipos de IA según Russell & Norvig</h3>
       <ul class="list-disc list-inside space-y-2 text-gray-700">
         <li><strong>Sistemas que piensan como humanos:</strong> Redes neuronales artificiales.</li>
@@ -150,7 +187,7 @@
       </ul>
     </section>
 
-    <section id="modo-operacion" class="p-8 m-4 bg-white rounded-lg shadow-md">
+    <section id="modo-operacion" class="p-8 m-4 bg-gray rounded-lg shadow-md">
       <h3 class="text-xl font-semibold mb-4">Tipos de IA según modo de operación</h3>
       <ul class="list-disc list-inside space-y-2 text-gray-700">
         <li><strong>Aprendizaje automático:</strong> Algoritmos que aprenden de datos (p.ej. recomendaciones).</li>
@@ -158,6 +195,8 @@
         <li><strong>Sistemas expertos:</strong> Solucionan problemas específicos (medicina, finanzas).</li>
       </ul>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="h-12 bg-white border-t border-gray-200 flex items-center justify-center mt-auto">

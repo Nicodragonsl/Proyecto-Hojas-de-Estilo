@@ -1,49 +1,63 @@
+<!-- archivo: historia.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia - TechCloud</title>
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/historia.css">
 </head>
-<body class="bg-gray-50 text-gray-800 flex">
+<body class="h-screen flex bg-gray-100 font-sans text-gray-800">
+
   <!-- Sidebar -->
-  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg h-screen fixed">
+  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg fixed h-full">
     <div class="h-16 flex items-center justify-center bg-blue-600 text-white border-b border-gray-200">
       <span class="text-2xl font-bold">TechCloud</span>
     </div>
     <nav class="mt-6">
       <ul>
-        <!-- Inicio -->
         <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
           <a href="index.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-9 9 9m-2 8v-6a2 2 0 00-2-2h-4a2 2 0 00-2 2v6m-4 0v-6a2 2 0 012-2h4a2 2 0 012 2v6"/>
+            </svg>
             <span>Inicio</span>
           </a>
         </li>
-        <!-- Historia (activo) -->
         <li class="px-6 py-3 bg-blue-600 text-white border-l-4 border-blue-800 transition rounded">
           <a href="historia.html" class="flex items-center gap-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none" />
+            </svg>
             <span>Historia</span>
           </a>
         </li>
-        <!-- Tipos -->
         <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
           <a href="tipos.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
             <span>Tipos</span>
           </a>
         </li>
-        <!-- Aplicaciones -->
         <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
           <a href="aplicaciones.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51h.09a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+            </svg>
             <span>Aplicaciones</span>
           </a>
         </li>
-        <!-- Futuro -->
-        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">  
           <a href="futuro.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 0110 10h-2a8 8 0 10-8 8v2a10 10 0 010-20z"/>
+            </svg>
             <span>Futuro</span>
           </a>
         </li>
@@ -53,49 +67,55 @@
 
   <!-- Contenido principal -->
   <div class="flex-1 ml-64 flex flex-col min-h-screen">
-    <main class="container mx-auto px-6 py-8 flex-1">
-      <h2 class="text-4xl font-bold mb-8 text-center animate-pulse">La Historia de la Nube, IA y Automatización</h2>
-      <!-- Sección con imagen y texto -->
-      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
-        <div>
-          <img src="/IMG/historiaTech.jpeg" alt="Historia Tech" class="w-full rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-        </div>
-        <div class="space-y-4 text-lg leading-relaxed">
-          <p class="transition transform hover:scale-105">Desde los albores del cómputo en la década de 1960 con el concepto de tiempo compartido, hasta el auge de las grandes plataformas de nube en los 2000, la Nube ha sido un pilar en la evolución tecnológica.</p>
-          <p class="transition transform hover:rotate-1">La Inteligencia Artificial nació como disciplina en 1956 y ha avanzado a través de olas de entusiasmo y escepticismo, hasta las actuales redes neuronales profundas.</p>
-          <p class="transition transform hover:-translate-y-1 hover:scale-110">La Automatización industrial, desde la robótica de la fábrica hasta los flujos de trabajo digitales, ha transformado la forma en que trabajamos.</p>
-        </div>
+
+    <main class="p-8 flex-1 overflow-auto space-y-12">
+      <!-- Sección introductoria -->
+      <section class="bg-white rounded-lg shadow-md p-6 text-center">
+        <h2 class="text-4xl font-bold mb-4">📜 La historia de la tecnología</h2>
+        <p class="text-gray-700 leading-relaxed">Desde los albores del cómputo en 1960 hasta la era de la nube, IA y automatización 🤖, ha sido un viaje épico lleno de innovación y desafíos. ¡Acompáñanos! 🌟</p>
       </section>
 
-      <section class="mb-12">
-        <h3 class="text-2xl font-semibold mb-4">Video Documental</h3>
-        <h4 class="text-1xl font-semibold mb-4">Le preguntamos a chatGPT sobre un video documental y nos dio esto:</h4>
-        <div class="aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Documental Tecnología" frameborder="0" allowfullscreen></iframe>
+      <!-- Sección imagen + texto con gap reducido -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+        <img src="/IMG/historiaTech.jpeg" alt="Historia Tech" class="w-full rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition">
+        <div class="space-y-3 text-gray-700 leading-relaxed">
+          <p>📌 <strong>1960s:</strong> Nació la idea de <em>tiempo compartido</em> en cómputo.</p>
+          <p>🚀 <strong>1956:</strong> Conferencia de Dartmouth: nace la IA.</p>
+          <p>🤖 <strong>1970s-80s:</strong> IA y robots industriales primeros pasos.</p>
+          <p>☁️ <strong>2000s:</strong> AWS, Azure y Google Cloud revolucionan la nube.</p>
         </div>
       </section>
 
-      <section class="mb-12">
-        <h3 class="text-2xl font-semibold mb-2">Video Documental</h3>
-        <h4 class="text-lg mb-6">Y ahora sí. A continuación, el video documental explicando cómo la IA ha avanzado a lo largo de la historia:</h4>
-        <div class="relative w-full pb-[56.25%] shadow-lg rounded-lg">
-  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/ldCofaq9lyQ" title="Documental Tecnología" frameborder="0" allowfullscreen></iframe>
-</div>
+      <!-- Video IA-proporcionado -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-2xl font-semibold mb-4">🎥 Video brindado por IA</h3>
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video IA" frameborder="0" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+        </div>
       </section>
 
-      <!-- Formulario de suscripción -->
-      <section class="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto mb-12">
-        <h3 class="text-xl font-semibold mb-4">Suscríbete para más contenido</h3>
-        <form action="#" class="space-y-4">
-          <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-          <button type="submit" class="w-full py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">Suscribirse</button>
+      <!-- Video documental encontrado -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-2xl font-semibold mb-4">🎬 Video documental</h3>
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe src="https://www.youtube.com/embed/ldCofaq9lyQ" title="Documental Tecnología" frameborder="0" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+        </div>
+      </section>
+
+      <!-- Suscripción -->
+      <section class="bg-blue-50 rounded-lg shadow-md p-6 text-center">
+        <h3 class="text-2xl font-semibold mb-4">🔔 Suscríbete para más historias</h3>
+        <p class="text-gray-700 mb-4">Recibe las últimas novedades y anécdotas históricas directamente en tu correo.</p>
+        <form action="#" class="max-w-md mx-auto space-y-4">
+          <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">¡Quiero saber más! 🚀</button>
         </form>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-6 text-center">
-      <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
+    <footer class="h-12 bg-white border-t border-gray-200 flex items-center justify-center">
+      <p class="text-sm text-gray-500">&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
     </footer>
   </div>
 </body>
