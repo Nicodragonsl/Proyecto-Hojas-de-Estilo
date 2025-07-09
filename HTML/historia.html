@@ -9,56 +9,94 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/historia.css">
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
-  <!-- Navbar -->
-  <header class="bg-blue-700 text-white shadow-lg">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-extrabold">TechCloud</h1>
-      <ul class="flex gap-6 text-sm md:text-base">
-        <li><a href="index.html" class="hover:text-blue-200 transition">Inicio</a></li>
-        <li><a href="historia.html" class="underline">Historia</a></li>
-        <li><a href="tipos.html" class="hover:text-blue-200 transition">Tipos</a></li>
-        <li><a href="aplicaciones.html" class="hover:text-blue-200 transition">Aplicaciones</a></li>
-        <li><a href="futuro.html" class="hover:text-blue-200 transition">Futuro</a></li>
+<body class="bg-gray-50 text-gray-800 flex">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg h-screen fixed">
+    <div class="h-16 flex items-center justify-center bg-blue-600 text-white border-b border-gray-200">
+      <span class="text-2xl font-bold">TechCloud</span>
+    </div>
+    <nav class="mt-6">
+      <ul>
+        <!-- Inicio -->
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="index.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <span>Inicio</span>
+          </a>
+        </li>
+        <!-- Historia (activo) -->
+        <li class="px-6 py-3 bg-blue-600 text-white border-l-4 border-blue-800 transition rounded">
+          <a href="historia.html" class="flex items-center gap-3">
+            <span>Historia</span>
+          </a>
+        </li>
+        <!-- Tipos -->
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="tipos.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <span>Tipos</span>
+          </a>
+        </li>
+        <!-- Aplicaciones -->
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="aplicaciones.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <span>Aplicaciones</span>
+          </a>
+        </li>
+        <!-- Futuro -->
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="futuro.html" class="flex items-center gap-3 text-gray-600 hover:text-white">
+            <span>Futuro</span>
+          </a>
+        </li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
   <!-- Contenido principal -->
-  <main class="container mx-auto px-6 py-8 flex-1">
-    <h2 class="text-4xl font-bold mb-8 text-center animate-pulse">La Historia de la Nube, IA y Automatización</h2>
-    <!-- Sección con imagen y video -->
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
-      <div>
-        <img src="https://source.unsplash.com/collection/190727/800x600" alt="Historia Tech" class="w-full rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-      </div>
-      <div class="space-y-4 text-lg leading-relaxed">
-        <p class="transition transform hover:scale-105">Desde los albores del cómputo en la década de 1960 con el concepto de tiempo compartido, hasta el auge de las grandes plataformas de nube en los 2000, la Nube ha sido un pilar en la evolución tecnológica.</p>
-        <p class="transition transform hover:rotate-1">La Inteligencia Artificial nació como disciplina en 1956 y ha avanzado a través de olas de entusiasmo y escepticismo, hasta las actuales redes neuronales profundas.</p>
-        <p class="transition transform hover:-translate-y-1 hover:scale-110">La Automatización industrial, desde la robótica de la fábrica hasta los flujos de trabajo digitales, ha transformado la forma en que trabajamos.</p>
-      </div>
-    </section>
+  <div class="flex-1 ml-64 flex flex-col min-h-screen">
+    <main class="container mx-auto px-6 py-8 flex-1">
+      <h2 class="text-4xl font-bold mb-8 text-center animate-pulse">La Historia de la Nube, IA y Automatización</h2>
+      <!-- Sección con imagen y texto -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
+        <div>
+          <img src="/IMG/historiaTech.jpeg" alt="Historia Tech" class="w-full rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
+        </div>
+        <div class="space-y-4 text-lg leading-relaxed">
+          <p class="transition transform hover:scale-105">Desde los albores del cómputo en la década de 1960 con el concepto de tiempo compartido, hasta el auge de las grandes plataformas de nube en los 2000, la Nube ha sido un pilar en la evolución tecnológica.</p>
+          <p class="transition transform hover:rotate-1">La Inteligencia Artificial nació como disciplina en 1956 y ha avanzado a través de olas de entusiasmo y escepticismo, hasta las actuales redes neuronales profundas.</p>
+          <p class="transition transform hover:-translate-y-1 hover:scale-110">La Automatización industrial, desde la robótica de la fábrica hasta los flujos de trabajo digitales, ha transformado la forma en que trabajamos.</p>
+        </div>
+      </section>
 
-    <section class="mb-12">
-      <h3 class="text-2xl font-semibold mb-4">Video Documental</h3>
-      <div class="aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Documental Tecnología" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
+      <section class="mb-12">
+        <h3 class="text-2xl font-semibold mb-4">Video Documental</h3>
+        <h4 class="text-1xl font-semibold mb-4">Le preguntamos a chatGPT sobre un video documental y nos dio esto:</h4>
+        <div class="aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Documental Tecnología" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
 
-    <!-- Formulario de suscripción -->
-    <section class="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto">
-      <h3 class="text-xl font-semibold mb-4">Suscríbete para más contenido</h3>
-      <form action="#" class="space-y-4">
-        <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-        <button type="submit" class="w-full py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">Suscribirse</button>
-      </form>
-    </section>
-  </main>
+      <section class="mb-12">
+        <h3 class="text-2xl font-semibold mb-2">Video Documental</h3>
+        <h4 class="text-lg mb-6">Y ahora sí. A continuación, el video documental explicando cómo la IA ha avanzado a lo largo de la historia:</h4>
+        <div class="relative w-full pb-[56.25%] shadow-lg rounded-lg">
+  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/ldCofaq9lyQ" title="Documental Tecnología" frameborder="0" allowfullscreen></iframe>
+</div>
+      </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-800 text-white py-6 text-center">
-    <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
-  </footer>
+      <!-- Formulario de suscripción -->
+      <section class="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto mb-12">
+        <h3 class="text-xl font-semibold mb-4">Suscríbete para más contenido</h3>
+        <form action="#" class="space-y-4">
+          <input type="email" placeholder="Tu correo electrónico" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+          <button type="submit" class="w-full py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">Suscribirse</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6 text-center">
+      <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
+    </footer>
+  </div>
 </body>
 </html>

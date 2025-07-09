@@ -4,39 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Futuro - TechCloud</title>
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/futuro.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-700 text-white shadow">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl font-bold">TechCloud</h1>
-      <ul class="flex gap-6">
-        <li><a href="index.html" class="hover:underline">Inicio</a></li>
-        <li><a href="historia.html" class="hover:underline">Historia</a></li>
-        <li><a href="tipos.html" class="hover:underline">Tipos</a></li>
-        <li><a href="aplicaciones.html" class="hover:underline">Aplicaciones</a></li>
-        <li><a href="futuro.html" class="underline">Futuro</a></li>
+<body class="bg-gray-50 text-gray-800 flex">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-blue-100 border-r border-gray-200 shadow-lg h-screen fixed">
+    <div class="h-16 flex items-center justify-center bg-blue-600 text-white border-b border-gray-200">
+      <span class="text-2xl font-bold">TechCloud</span>
+    </div>
+    <nav class="mt-6">
+      <ul>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="index.html" class="text-gray-600 hover:text-white">Inicio</a>
+        </li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="historia.html" class="text-gray-600 hover:text-white">Historia</a>
+        </li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="tipos.html" class="text-gray-600 hover:text-white">Tipos</a>
+        </li>
+        <li class="px-6 py-3 hover:bg-blue-600 hover:text-white transition rounded">
+          <a href="aplicaciones.html" class="text-gray-600 hover:text-white">Aplicaciones</a>
+        </li>
+        <li class="px-6 py-3 bg-blue-600 text-white border-l-4 border-blue-800 rounded">
+          <a href="futuro.html">Futuro</a>
+        </li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
-  <main class="container mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-6 animate-bounce">El Futuro de la Tecnología</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>Nubes cuánticas: revolución en procesamiento.</li>
-      <li>IA explicable y ética integrada en sistemas.</li>
-      <li>Automatización autónoma con robots colaborativos.</li>
-    </ul>
-    <form class="mt-8 p-6 bg-white rounded-lg shadow space-y-4">
-      <h3 class="text-xl font-semibold">Suscríbete para más novedades</h3>
-      <input type="email" placeholder="Tu correo" class="w-full border p-2 rounded">
-      <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">Suscribirme</button>
-    </form>
-  </main>
+  <!-- Contenido principal -->
+  <div class="flex-1 ml-64 flex flex-col min-h-screen">
+    <main class="container mx-auto px-6 py-12 flex-1">
+      <h2 class="text-3xl font-bold mb-6 animate-bounce">El Futuro de la Tecnología</h2>
+      <ul class="list-disc list-inside space-y-2 mb-8">
+        <li class="transform transition hover:scale-105">Nubes cuánticas: revolución en procesamiento.</li>
+        <li class="transform transition hover:rotate-1">IA explicable y ética integrada en sistemas.</li>
+        <li class="transform transition hover:-translate-y-1 hover:scale-110">Automatización autónoma con robots colaborativos.</li>
+      </ul>
+      <form class="mt-8 p-6 bg-white rounded-lg shadow space-y-4 max-w-md">
+        <h3 class="text-xl font-semibold">Suscríbete para más novedades</h3>
+        <input type="email" placeholder="Tu correo" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+        <button type="submit" class="w-full bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">Suscribirme</button>
+      </form>
+    </main>
 
-  <footer class="bg-blue-800 text-white py-4 text-center">
-    <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6 text-center">
+      <p>&copy; 2025 Nico y Andre - Proyecto Tecnologías Cloud e IA</p>
+    </footer>
+  </div>
 </body>
 </html>
