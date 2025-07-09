@@ -1,10 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Animación de pulso personalizada */
+/* archivo: historia.css */
 @layer utilities {
-  .animate-pulse-slow {
-    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  .aspect-w-16 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .aspect-h-9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
   }
 }
+
+/* Animaciones personalizadas */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+
